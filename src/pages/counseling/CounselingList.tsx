@@ -34,8 +34,8 @@ const CounselingList = () => {
         },
       });
 
-      console.log(res.data.result);
-      if (res.status === 200) setCounselingRecord(res.data.result);
+      console.log(res.data.result.totalRecords);
+      if (res.status === 200) setCounselingRecord(res.data.result.totalRecords);
     } catch (err) {
       console.error(err);
       return undefined;

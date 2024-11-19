@@ -23,11 +23,23 @@ const CounselingListItem = ({
     setCounselingRecord((data) => data.filter((dataItem) => dataItem.id !== id));
   };
 
+  //상담 시작 날짜 가져오는 함수
+  function formatDate(date: string) {
+    const createdDate = new Date(date);
+
+    const year = createdDate.getFullYear();
+    const month = createdDate.getMonth() + 1;
+    const day = createdDate.getDate();
+
+    return `${year}.${month}.${day} `;
+  }
+  const consultationDate = formatDate(item?.updated_at);
+
   return (
     <div css={RecordItem} onClick={() => navigate(`/counseling/${item.id}`)}>
       <div css={ItemLeft} className="left">
         <p>
-          최근 상담 <span className="upDate">{item.updated_at.split(' ')[0]}</span>
+          최근 상담 <span className="upDate">{consultationDate}</span>
         </p>
 
         <div className="tags">
