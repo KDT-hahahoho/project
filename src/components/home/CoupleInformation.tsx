@@ -208,13 +208,12 @@ const SpouseCard = styled.div`
   padding: 1rem;
   box-shadow: inset 0 0 0.3rem rgba(0, 0, 0, 0.1);
 `;
-
 const CardImage = styled.img`
   width: 11rem;
   height: 10rem;
   border-radius: 50%;
-  margin-bottom: 1rem;
   margin-bottom: 1.8rem;
+  transform: scaleX(-1);
 `;
 
 const CardName = styled.div`
