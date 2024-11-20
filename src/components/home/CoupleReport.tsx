@@ -241,7 +241,7 @@ const CoupleReportTitleDes = styled.p`
 
 const CoupleReportLineChartContainer = styled.div`
   width: 100%;
-  height: 61.5rem;
+  margin-bottom: 5rem;
   border: 1px solid ${variables.colors.gray50};
   border-radius: ${variables.borderRadius};
   margin-top: 4.2rem;
