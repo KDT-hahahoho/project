@@ -104,9 +104,9 @@ const Dot = styled.div<{ status: DotStatus }>`
   background-color: ${({ status }) => {
     switch (status) {
       case 'bothCompleted':
-        return variables.colors.primary; // 파란색 - 둘 다 완료
+        return variables.colors.primaryStrong; // 보라색 - 둘 다 완료
       case 'oneCompleted':
-        return variables.colors.secondary; // 빨간색 - 한 명만 완료
+        return variables.colors.secondaryStrong; // 연한 보라색 - 한 명만 완료
       case 'locked':
         return variables.colors.gray50; // 회색 - 미완료 또는 잠김
       default:
