@@ -13,11 +13,11 @@ const EmotionGraph: React.FC = () => {
   const analysisResult = useAnalysisStore((state) => state.analysis);
 
   const data: EmotionData[] = [
-    { value: analysisResult.emotions.anger, name: '분노', color: `${variables.colors.primary}` },
-    { value: analysisResult.emotions.disgust, name: '혐오', color: `${variables.colors.primaryLight}` },
-    { value: analysisResult.emotions.fear, name: '공포', color: `${variables.colors.primarySoft}` },
+    { value: analysisResult.emotions.anger, name: '분노', color: `#FFD4CB` },
+    { value: analysisResult.emotions.disgust, name: '혐오', color: `#E6E6E6` },
+    { value: analysisResult.emotions.fear, name: '공포', color: `#FEE9CA` },
     { value: analysisResult.emotions.joy, name: '기쁨', color: `${variables.colors.primaryStrong}` },
-    { value: analysisResult.emotions.sadness, name: '슬픔', color: `${variables.colors.secondary}` },
+    { value: analysisResult.emotions.sadness, name: '슬픔', color: `#E2F2FF` },
     { value: analysisResult.emotions.surprise, name: '놀람', color: `${variables.colors.secondarySoft}` },
   ];
 
@@ -32,7 +32,7 @@ const EmotionGraph: React.FC = () => {
       icon: 'circle',
       itemWidth: 20,
       itemHeight: 20,
-      padding: [40, 40, 0, 0],
+      padding: [40, 35, 0, 0],
     },
     series: [
       {
