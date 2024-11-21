@@ -84,7 +84,7 @@ const EmotionStressBefore = ({
   return (
     <StressText className="xxx">
       <div className="stress-box">
-        <ECharts option={options} opts={{ width: 'auto', height: 'auto' }} />
+        <ECharts option={options} opts={{ width: 170, height: 170 }} />
       </div>
       <p className="stress-sub-text">{text}</p>
     </StressText>
@@ -106,7 +106,7 @@ export const StressText = styled.div`
     font-size: 1.5rem;
     font-weight: 500;
     color: ${variables.colors.gray100};
-    margin: 4em 0 6rem 0;
+    margin: -2rem 0 3rem;
   }
 `;
 
