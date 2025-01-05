@@ -148,8 +148,8 @@ export const ResultTitleBox = styled.div`
 
 export const ResultTextBox = styled.div`
   align-items: center;
-  margin-bottom: 3rem;
-  margin-top: 10rem;
+  margin-bottom: 2rem;
+  margin-top: 3rem;
 
   & > h2 {
     font-size: ${variables.size.large};
